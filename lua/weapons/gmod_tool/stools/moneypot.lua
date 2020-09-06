@@ -57,24 +57,6 @@ local function canTool(tr)
 end
 
 if (CLIENT) then
-	language.Add("tool.moneypot.name", "Money Pot")
-	language.Add("tool.moneypot.desc", "Create a DarkRP Money Pot")
-	language.Add("tool.moneypot.0", "Left click to spawn a Money Pot")
-	language.Add(
-		"tool.moneypot.header",
-		"Allows you to store vast amounts of money in a small box."
-	)
-	language.Add("tool.moneypot.weld", "Weld to target")
-
-	-- Other
-
-	language.Add("Undone_moneypot", "Undone Money Pot")
-	language.Add("SBoxLimit_moneypots", "You've hit the Money Pots limit!")
-	language.Add("Cleanup_moneypots", "Money Pots")
-	language.Add("Cleaned_moneypots", "Cleaned up all Money Pots")
-	function TOOL:LeftClick(tr)
-		return canTool(tr)
-	end
 	function TOOL.BuildCPanel(cp)
 		cp:AddControl("Label", {Text = "#tool.moneypot.header"})
 
